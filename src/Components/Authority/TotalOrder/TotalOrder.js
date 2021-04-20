@@ -114,7 +114,7 @@ const TotalOrder = () => {
     });
 
     useEffect(() => {
-        fetch('http://localhost:5000/adminEmail')
+        fetch('https://intense-escarpment-18189.herokuapp.com/adminEmail')
             .then(res => res.json())
             .then(data => setIsAdmin(data))
     }, [])
@@ -128,7 +128,7 @@ const TotalOrder = () => {
     const [status, setStatus] = useState([]);
 
     const updateData = (id) => {
-        const url = `http://localhost:5000/update/${id}`
+        const url = `https://intense-escarpment-18189.herokuapp.com/update/${id}`
         fetch(url, {
             method: 'POST',
             headers: {
@@ -152,7 +152,7 @@ const TotalOrder = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/order')
+        fetch('https://intense-escarpment-18189.herokuapp.com/order')
             .then(res => res.json())
             .then(data => setManageServices(data))
     }, [manageServices])
@@ -177,7 +177,7 @@ const TotalOrder = () => {
                     <Divider />
                     <List>
                         <ListItem >
-                            <Link to="/home"><Typography variant="h4">Repair HUT</Typography></Link>
+                            <Link to="/home"><Typography variant="h4">Mobile Repair</Typography></Link>
                         </ListItem>
                         {
                             user.admin == false &&

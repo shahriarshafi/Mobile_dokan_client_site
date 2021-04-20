@@ -124,7 +124,7 @@ const UserDashboard = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/adminEmail')
+        fetch('https://intense-escarpment-18189.herokuapp.com/adminEmail')
             .then(res => res.json())
             .then(data => setIsAdmin(data))
     }, [])
@@ -149,7 +149,7 @@ const UserDashboard = () => {
             email: shippingData.email,
             paymentId
         };
-        const url = `http://localhost:5000/addOrder`;
+        const url = `https://intense-escarpment-18189.herokuapp.com/addOrder`;
         fetch(url, {
             method: 'POST',
             headers: {
@@ -168,7 +168,7 @@ const UserDashboard = () => {
 
     // Show Service name & Price
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://intense-escarpment-18189.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setServices(data))
     })
@@ -201,7 +201,7 @@ const UserDashboard = () => {
                 <Divider />
                 <List>
                     <ListItem >
-                        <Link to="/home"><Typography variant="h4">Repair HUT</Typography></Link>
+                        <Link to="/home"><Typography variant="h4">Mobile Repair</Typography></Link>
                     </ListItem>
                     {
                         user.admin == false &&

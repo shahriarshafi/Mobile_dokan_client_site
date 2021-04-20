@@ -115,7 +115,7 @@ const ManageData = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/adminEmail')
+        fetch('https://intense-escarpment-18189.herokuapp.com/adminEmail')
             .then(res => res.json())
             .then(data => setIsAdmin(data))
     }, [])
@@ -127,14 +127,14 @@ const ManageData = () => {
     })
 
     const handleDeleteService = id => {
-        fetch(`http://localhost:5000/deleteEvent/${id}`, {
+        fetch(`https://intense-escarpment-18189.herokuapp.com/deleteEvent/${id}`, {
             method: 'DELETE',
         })
             .then(res => res.json())
             .then(data => setDeleteService(data))
     }
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://intense-escarpment-18189.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setManageServices(data))
     }, [manageServices])
@@ -158,7 +158,7 @@ const ManageData = () => {
                 <Divider />
                 <List>
                     <ListItem >
-                        <Link to="/home"><Typography variant="h4">Repair HUT</Typography></Link>
+                        <Link to="/home"><Typography variant="h4">Mobile Repair</Typography></Link>
                     </ListItem>
                     {
                         user.admin == false &&
@@ -208,7 +208,7 @@ const ManageData = () => {
                                 <ListItemIcon>
                                     <EditIcon />
                                 </ListItemIcon>
-                                <Link to="/makeAdmin"><Typography variant="h6">Make Admin</Typography></Link>
+                                <Link to="/makeAdmin"><ListItemText primary="Make Admin"></ListItemText></Link>
                             </ListItem>
                         </div>
                     }

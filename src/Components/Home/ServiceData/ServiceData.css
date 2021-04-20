@@ -10,7 +10,7 @@
 }
 
 .services .card:hover{
-    background-image: linear-gradient(75deg,tomato , yellow);
+    background-image: linear-gradient(75deg,rgb(7, 49, 20) , rgb(255, 0, 200));
     color: #fff !important;
     transition:  .1s  all ease-in-out !important;
 }

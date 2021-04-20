@@ -113,7 +113,7 @@ const Authority = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/adminEmail')
+        fetch('https://intense-escarpment-18189.herokuapp.com/adminEmail')
             .then(res => res.json())
             .then(data => setIsAdmin(data))
     }, [])
@@ -134,7 +134,7 @@ const Authority = () => {
             price: data.price,
         };
         console.log(serviceData);
-        const url = `http://localhost:5000/addService`;
+        const url = `https://intense-escarpment-18189.herokuapp.com/addService`;
         fetch(url, {
             method: 'POST',
             headers: {
@@ -153,7 +153,7 @@ const Authority = () => {
     const handleImageUpload = event => {
         console.log(event.target.files[0]);
         const imageData = new FormData();
-        imageData.set('key', '8a27ca961afeedc0cada6fe756ac773f');
+        imageData.set('key', '03c9ad5387424a0c097ecfd076eca283');
         imageData.append('image', event.target.files[0]);
 
         axios.post('https://api.imgbb.com/1/upload',
@@ -185,7 +185,7 @@ const Authority = () => {
                 <Divider />
                 <List>
                     <ListItem >
-                        <Link to="/home"><Typography variant="h4">Repair HUT</Typography></Link>
+                        <Link to="/home"><Typography variant="h4">Mobile Repair</Typography></Link>
                     </ListItem>
                     {
                         user.admin == false &&
@@ -235,7 +235,7 @@ const Authority = () => {
                                 <ListItemIcon>
                                     <EditIcon />
                                 </ListItemIcon>
-                                <Link to="/makeAdmin"><Typography variant="h6">Make Admin</Typography></Link>
+                                <Link to="/makeAdmin"><ListItemText primary="Make Admin"></ListItemText></Link>
                             </ListItem>
                         </div>
                     }

@@ -114,7 +114,7 @@ const ReviewData = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/adminEmail')
+        fetch('https://intense-escarpment-18189.herokuapp.com/adminEmail')
             .then(res => res.json())
             .then(data => setIsAdmin(data))
     }, [])
@@ -135,7 +135,7 @@ const ReviewData = () => {
             imageURL: imageURL
         };
         console.log(reviewData);
-        const url = `http://localhost:5000/addReview`;
+        const url = `https://intense-escarpment-18189.herokuapp.com/addReview`;
         fetch(url, {
             method: 'POST',
             headers: {
@@ -187,7 +187,7 @@ const ReviewData = () => {
                 <Divider />
                 <List>
                     <ListItem >
-                        <Link to="/home"><Typography variant="h4">Repair HUT</Typography></Link>
+                        <Link to="/home"><Typography variant="h4">Mobile Repair</Typography></Link>
                     </ListItem>
                     {
                         user.admin == false &&

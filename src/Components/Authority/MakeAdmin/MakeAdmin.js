@@ -111,7 +111,7 @@ const MakeAdmin = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/adminEmail')
+        fetch('https://intense-escarpment-18189.herokuapp.com/adminEmail')
             .then(res => res.json())
             .then(data => setIsAdmin(data))
     }, [])
@@ -127,7 +127,7 @@ const MakeAdmin = () => {
         const adminEmails = {
             adminEmail: data.adminEmail,
         };
-        const url = `http://localhost:5000/addAdminEmail`;
+        const url = `https://intense-escarpment-18189.herokuapp.com/addAdminEmail`;
         fetch(url, {
             method: 'POST',
             headers: {
@@ -145,7 +145,7 @@ const MakeAdmin = () => {
             <AppBar position="absolute" className={clsx(classes.appBar, open && classes.appBarShift)}>
                 <Toolbar className={classes.toolbar}>
                     <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-                        Add Service
+                        Make Admin
                </Typography>
                 </Toolbar>
             </AppBar>
@@ -159,7 +159,7 @@ const MakeAdmin = () => {
                 <Divider />
                 <List>
                     <ListItem >
-                        <Link to="/home"><Typography variant="h4">Repair HUT</Typography></Link>
+                        <Link to="/home"><Typography variant="h4">Mobile Repair</Typography></Link>
                     </ListItem>
                     {
                         user.admin == false &&
@@ -185,7 +185,7 @@ const MakeAdmin = () => {
                         </div>
                     }
                     {
-                        user.admin == false &&
+                        user.admin == true &&
                         <div>
                             <ListItem button>
                                 <ListItemIcon>
@@ -209,7 +209,7 @@ const MakeAdmin = () => {
                                 <ListItemIcon>
                                     <EditIcon />
                                 </ListItemIcon>
-                                <Link to="/makeAdmin"><Typography variant="h6">Make Admin</Typography></Link>
+                                <Link to="/makeAdmin"><ListItemText primary="Make Admin"></ListItemText></Link>
                             </ListItem>
                         </div>
                     }
@@ -225,7 +225,7 @@ const MakeAdmin = () => {
                     <form onSubmit={handleSubmit(onSubmit)}>
                         {/* register your input into the hook by invoking the "register" function */}
 
-                        <label class="form-label">Description</label>
+                        <label class="form-label">Enter Admin Email Address</label>
                         <input class="form-control" {...register("adminEmail", { required: true })} placeholder="Enter Email Address" name="adminEmail" />
                         <br />
                         {errors.exampleRequired && <span>This field is required</span>}

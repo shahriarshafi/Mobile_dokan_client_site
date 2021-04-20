@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="container">
                 <div className="row text-white">
                     <div className="col-md-4">
-                        <h3 className="mt-3"><FontAwesomeIcon className="me-2" icon={faTools} /> REPAIR HUT</h3>
+                        <h3 className="mt-3"><FontAwesomeIcon className="me-2" icon={faTools} /> Mobile Repair</h3>
                     </div>
                     <div className="col-md-2">
                         <h4 className="mt-3">COMPANY</h4>
@@ -23,12 +23,12 @@ const Footer = () => {
                     </div>
                     <div className="col-md-4">
                         <h3 className="mt-3">CONTACTS</h3>
-                        <p> <FontAwesomeIcon className="me-2" icon={faPhone} />01686687843</p>
-                        <p> <FontAwesomeIcon className="me-2" icon={faMapMarker} />HR Vobon, South Thakurpara</p>
-                        <p><FontAwesomeIcon className="me-2" icon={faEnvelope} />repair.hut@gmail.com</p>
+                        <p> <FontAwesomeIcon className="me-2" icon={faPhone} />+88017777777777</p>
+                        <p> <FontAwesomeIcon className="me-2" icon={faMapMarker} />Mojid Villa</p>
+                        <p><FontAwesomeIcon className="me-2" icon={faEnvelope} />mobilerepair@gmail.com</p>
                     </div>
                 </div>
-                <p className="text-white text-center">Copyright All Rights Reserved By @Sami-2021</p>
+                <p className="text-white text-center">Copyright All Rights Reserved By @Shafi</p>
             </div>
         </div>
     );

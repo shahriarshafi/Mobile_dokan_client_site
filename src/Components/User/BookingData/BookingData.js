@@ -114,7 +114,7 @@ const BookingData = () => {
     });
 
     useEffect(() => {
-        fetch('http://localhost:5000/adminEmail')
+        fetch('https://intense-escarpment-18189.herokuapp.com/adminEmail')
             .then(res => res.json())
             .then(data => setIsAdmin(data))
     }, [])
@@ -126,7 +126,7 @@ const BookingData = () => {
     })
 
     useEffect(() => {
-        fetch('http://localhost:5000/orders?email=' + loggedInUser.email)
+        fetch('https://intense-escarpment-18189.herokuapp.com/orders?email=' + loggedInUser.email)
             .then(res => res.json())
             .then(data => setList(data))
     }, [])
@@ -151,7 +151,7 @@ const BookingData = () => {
                     <Divider />
                     <List>
                         <ListItem >
-                            <Link to="/home"><Typography variant="h4">Repair HUT</Typography></Link>
+                            <Link to="/home"><Typography variant="h4">Mobile Repair</Typography></Link>
                         </ListItem>
                         {
                         user.admin == false &&
@@ -201,7 +201,7 @@ const BookingData = () => {
                                     <ListItemIcon>
                                         <EditIcon />
                                     </ListItemIcon>
-                                    <Link to="/makeAdmin"><Typography variant="h6">Make Admin</Typography></Link>
+                                    <Link to="/makeAdmin"><ListItemText primary="Make Admin"></ListItemText></Link>
                                 </ListItem>
                             </div>
                         }
