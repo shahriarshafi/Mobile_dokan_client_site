@@ -213,7 +213,7 @@ const ReviewData = () => {
                         </div>
                     }
                     {
-                        user.admin == false &&
+                        user.admin == true &&
                         <div>
                             <ListItem button>
                                 <ListItemIcon>

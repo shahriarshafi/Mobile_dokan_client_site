@@ -10,11 +10,11 @@ const News = () => {
             <h1 className="text-center text-primary my-5">OUR NEWS</h1>
             <div className="row">
                 <div className="col-md-4">
-                    <div class="card bg-info">
+                    <div class="card bg-success text-white">
                         <img src={n1} class="card-img-top img-resize" alt="..." />
                         <div class="card-body">
                             <h5 class="card-title">HOW TO CHOOSE HEADPHONES FOR YOUR SMARTPHONE</h5>
-                            <p class="card-text">In today’s era of technological advancement and digital life, a mobile phone is a necessity one cannot imagine living without. It’s the fastest and easiest way to connect with your loved ones, friends, clients, and vendors. Depending on the use of a mobile phone, there is a wide categorization of mobile phones ranging from simple to highly sophisticated.</p>
+                            <p class="card-text">Depending on the use of a mobile phone.Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis natus voluptates hic in, possimus consectetur eligendi distinctio rerum autem culpa dolor reiciendis omnis, eos alias et deleniti consequatur modi quia numquam! Distinctio, molestias inventore tenetur ducimus sequi quibusdam sed labore quas pariatur quos, excepturi asperiores!</p>
                             <a className="text-decoration-none text-danger" href="#">Read More...</a>
                         </div>
                         <div class="card-footer text-muted text-center">
@@ -23,11 +23,11 @@ const News = () => {
                     </div>
                 </div>
                 <div className="col-md-4">
-                    <div class="card bg-info">
+                    <div class="card bg-success text-white">
                         <img src={n2} class="card-img-top img-resize" alt="..." />
                         <div class="card-body">
                             <h5 class="card-title">THE TRANSFER OF DATA FROM TABLET TO PHONE</h5>
-                            <p class="card-text">OTG USB Sticks work in the most basic of ways: plug the USB key into your computer and transfer some files to it (be it music, movies, presentations for work, or masses of photos), then plug the USB key into your phone or tablet to access those files while you are on the go. The neat thing is that you don’t even have to transfer the files over to the</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quis nisi quibusdam quidem minima, facere veniam consequatur ullam unde dolor corporis suscipit. Cupiditate earum facilis incidunt laudantium pariatur minus! Veniam, non in veritatis repellat quae aperiam ut maiores atque. Incidunt, saepe. Eveniet consequatur aspernatur eius, dolorum nesciunt porro quaerat repellendus.</p>
                             <a className="text-decoration-none text-danger" href="#">Read More...</a>
                         </div>
                         <div class="card-footer text-muted text-center">
@@ -36,11 +36,11 @@ const News = () => {
                     </div>
                 </div>
                 <div className="col-md-4">
-                    <div class="card bg-info">
+                    <div class="card bg-success text-white">
                         <img src={n3} class="card-img-top img-resize" alt="..." />
                         <div class="card-body">
                             <h5 class="card-title">TERMS OF USE OF PHONES AND TABLETS IN HOT COUNTRIES</h5>
-                            <p class="card-text">It has become an industry standard to put “mobile first” when designing for the mobile web and while this is, in general, a good thing – it has also left to a neglect of the tablet platform in mobile design. There are clear differences between smartphones and tablets and key differences in the way that users interact with them. It’s important for us - as U</p>
+                            <p class="card-text"> Platform in mobile design. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium illo impedit consequatur ex, cupiditate doloribus odio cumque facilis voluptas dolorem iure deleniti atque nulla officia repudiandae quibusdam molestias quos qui dicta. Laboriosam quas vero eos laudantium voluptatibus iusto, nulla quasi adipisci aut repellat illum nemo? There are clear differences between smartphones and tablets and key differences in the way that users interact with them. It’s important for us - as U</p>
                             <a className="text-decoration-none text-danger" href="#">Read More...</a>
                         </div>
                         <div class="card-footer text-muted text-center">
